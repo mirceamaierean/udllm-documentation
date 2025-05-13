@@ -89,3 +89,7 @@
     "articles": ["https://...", "https://..."]
   }
   ```
+
+# Message Service
+
+Description of the Message Service component.

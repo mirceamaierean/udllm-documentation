@@ -67,13 +67,6 @@ This document describes the main tables and relations in the Newsito Informiro d
 
 ---
 
-## Source
-
-- **url**: String (PK)
-- **Report**: [Report] (relation)
-
----
-
 ## Message
 
 - **id**: String (PK)
@@ -83,7 +76,6 @@ This document describes the main tables and relations in the Newsito Informiro d
 - **conversationId**: String (FK to Conversation)
 - **conversation**: Conversation (relation)
 - **sender**: User (relation)
-- **Report**: [Report] (relation)
 
 ---
 
@@ -100,19 +92,7 @@ This document describes the main tables and relations in the Newsito Informiro d
 
 ---
 
-## Report
-
-- **id**: String (PK)
-- **messageId**: String (FK to Message)
-- **sourceId**: String (FK to Source)
-- **createdAt**: DateTime (default: now)
-- **updatedAt**: DateTime (auto-updated)
-- **message**: Message (relation)
-- **source**: Source (relation)
-
----
-
 **Notes:**
 
 - All relations are enforced with foreign keys and cascading deletes where specified.
-- The schema supports authentication (NextAuth), chat conversations, messages, prompt feedback, and source reporting.
+- The schema supports authentication (NextAuth), chat conversations, messages, and prompt feedback.

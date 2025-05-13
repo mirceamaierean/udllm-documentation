@@ -1,3 +1,7 @@
+# Use Chat Hook
+
+Description of the Use Chat Hook component.
+
 # useChat Hook Documentation
 
 The `useChat` hook manages chat state and provides utility methods for interacting with the chat interface and AI backend.

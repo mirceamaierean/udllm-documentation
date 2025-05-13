@@ -1,3 +1,7 @@
+# Conversation Service
+
+Description of the Conversation Service component.
+
 # Conversation Service API Documentation
 
 ## getAllConversations
